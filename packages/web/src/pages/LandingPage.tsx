@@ -19,7 +19,7 @@ import {
   PiTreeStructure,
   PiPenNib,
 } from 'react-icons/pi';
-import AwsIcon from '../assets/aws.svg?react';
+// import AwsIcon from '../assets/aws.svg?react'; // 旧AWSアイコン（非表示）
 import useInterUseCases from '../hooks/useInterUseCases';
 import {
   AgentPageQueryParams,
@@ -39,6 +39,7 @@ import queryString from 'query-string';
 import { MODELS } from '../hooks/useModel';
 import useUseCases from '../hooks/useUseCases';
 import { useTranslation } from 'react-i18next';
+import daisenLogo from '../assets/daisen_logo.png';       // 改修：ダイセンロゴをインポート
 
 const ragEnabled: boolean = import.meta.env.VITE_APP_RAG_ENABLED === 'true';
 const ragKnowledgeBaseEnabled: boolean =
@@ -250,7 +251,10 @@ const LandingPage: React.FC = () => {
   return (
     <div className="pb-24">
       <div className="bg-aws-squid-ink flex flex-col items-center justify-center px-3 py-5 text-xl font-semibold text-white lg:flex-row">
-        <AwsIcon className="mr-5 size-20" />
+        {/* 旧AWSアイコン（非表示）*/}
+        {/* <AwsIcon className="mr-5 size-20" /> */}
+        {/* 新ダイセンロゴ */}
+        <img src={daisenLogo} alt="Daisen Logo" className="mr-5 h-20 w-20" />
         {t('landing.title')}
       </div>
 
