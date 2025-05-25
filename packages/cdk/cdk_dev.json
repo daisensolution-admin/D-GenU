@@ -61,11 +61,11 @@
     "inlineAgents": false,
     "flows": [
       {
-        "flowId": "VPVXZ7DAOC",
-        "aliasId": "PM9FCC7TV1",
-        "flowName": "drag-issue-flow",
+        "flowId": "G6PJ2I1J6G",
+        "aliasId": "1UPZWODV9A",
+        "flowName": "drag-us-flow-2ds42",
         "description":
-          "drag GenU flow 本番"
+          "drag GenU flow 実験"
       }
     ],
     "allowedIpV4AddressRanges": null,
